@@ -10,13 +10,13 @@
     height: 100%;
     overflow: hidden;
     position: absolute;
-    border: 1px solid black;
+
     background-color: #d8342b;
 }
 
 #caja2{
     width: 80%;
-    height: 60%;
+    height: 70%;
     margin: 12% 10%;
     position: absolute;
     display: flex;
