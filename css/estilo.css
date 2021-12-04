@@ -13,22 +13,33 @@
 
     background-color: #d8342b;
 }
+#adorno{
+    position: absolute;
+    float:left;
+}
+#adorno2{
+    position: absolute;
 
+    float: right;
+}
 #caja2{
-    width: 80%;
-    height: 70%;
-    margin: 12% 10%;
+    width: 60%;
+    height: auto;
+    margin: 3% 20%;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     border: 1px solid black;
+    border-radius: 20px 20px;
 }
 #caja2 img{
     width: 100%;
     height: 100%;
+    border-radius: 20px 20px;
 }
+
 
 #cabecera{
     width: 1000px;
@@ -50,6 +61,10 @@
     height: 600px;
     margin: 150px 50px;
     border: 1px solid black;
+    border-radius: 20px 20px;
+}
+#contenedor2 iframe{
+    border-radius: 10px 10px;
 }
 #contenedor3{
     width: 900px;
