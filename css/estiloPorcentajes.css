@@ -1,0 +1,207 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-size: 9.6px;
+}
+
+
+
+#caja1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #d8342b;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+#franjaAzul{
+    background-color: #245da8;
+    height: 3vh;
+    width: 100%;
+    position: absolute;
+}
+#franjaAzulinferior{
+    background-color: #245da8;
+    height: 3vh;
+    width: 100%;
+    position: absolute;
+
+    bottom: 0%;
+
+
+}
+#adorno{
+    width: 20%;
+
+    margin-top: 3.5%;
+    position: absolute;
+
+    left: 80%;
+
+
+}
+#adorno img{
+    width: 100%;
+}
+#adorno2 {
+    width: 20%;
+    position: absolute;
+    margin-top: 3.5%;
+    right: 80%;
+
+
+}
+#adorno2 img{
+    width: 100%;
+}
+#caja2{
+    width: 60%;
+    height: auto;
+    margin: 3.5% 20%;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 20px 20px;
+
+}
+#caja2 img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px;
+}
+
+/*
+La cabecera ocupa todo el ancho de la pagina
+que son 1000px y pasara a ser el 100%
+el alto son 200pixeles que es lo que ocupa la imagen de alto
+
+ */
+#cabecera{
+    width: 100%;
+    height: 20.83rem;
+    border-color:black;
+    border-width: 1px 0px;
+    border-style: solid;
+
+
+}
+#contenedorExterno1{
+    width: 90%;
+    height: 62.5rem;
+    border-color:black;
+    border-width: 1px 0px;
+    border-style: solid;
+    padding: 15.625rem 5% ;
+}
+#contenedor1{
+    width: 90%;
+    height: 62.5rem;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+
+}
+#contenedor1 img{
+    width: 100%;
+    height: 100%;
+}
+#contenedorExterno2{
+    width: 100%;
+    height: 93.75rem;
+    border-color:black;
+    border-width: 1px 0px;
+    border-style: solid;
+
+}
+#contenedor2{
+    width: 90%;
+    height: 62.5rem;
+    margin: 15.625rem 5%;
+    /*border: 1px solid black;*/
+    border-radius: 20px 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#contenedor2 iframe{
+    border-radius: 20px 20px;
+}
+#contenedorExterno3{
+    width: 100%;
+    height: 93.75rem;
+    border-color:black;
+    border-width: 1px 0px;
+    border-style: solid;
+
+
+}
+#contenedor3{
+    width: 90%;
+    height: 62.5rem;
+    padding: 15.625rem 5%;
+    border-color:black;
+    border-width: 1px 0px;
+    border-style: solid;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+#conteinerInterno1{
+    width: 29.8%;
+    height: 31.25rem;
+    border: 1px solid black;
+    padding: 15.625rem 5% 15.625rem 10%;
+    float: left;
+
+}
+#conteinerInterno2{
+
+    width: 29.8%;
+    height: 31.25rem;
+    border: 1px solid black;
+    padding: 15.625rem 10% 15.625rem 5%;
+    float: left;
+
+}
+/*
+Estilo del footer y sus caja internas
+ */
+footer{
+    width: 100%;
+    height: 31.25rem;
+    border-color:black;
+    border-width: 1px 0px;
+    border-style: solid;
+
+}
+footer div{
+    width: 9%;
+    height: auto;
+    padding: 1%;
+    position: relative;
+    float: right;
+    right: 5%;
+
+}
+footer div img{
+    width: 100%;
+    height: 100%;
+}
