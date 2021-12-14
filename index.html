@@ -6,10 +6,12 @@
     <link type="text/css" rel="stylesheet" href="css/resetCSS.css">
     <!-- <link type="text/css" rel="stylesheet" href="css/estiloPixeles.css"> -->
     <link type="text/css" rel="stylesheet" href="css/estiloPorcentajes.css">
+    <script src="js/nieve.js"></script>
+    <script src="js/interacion.js"></script>
 </head>
-<body>
+<body onload="iniNevada(300,80)">
 
-<div id="caja1">
+<div id="caja1"  >
     <div id="franjaAzul">
 
     </div>
@@ -21,6 +23,9 @@
     </div>
     <div id="adorno2">
         <img src="img/adorno.png">
+    </div>
+    <div id="boton">
+        <a onclick=ocultarfrontal() href="#" class="rainbow-button" alt="Siguiente"></a>
     </div>
     <div id="franjaAzulinferior">
 
