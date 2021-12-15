@@ -5,6 +5,9 @@
 html{
     font-size: 9.6px;
 }
+body{
+    background-color: #245da8;
+}
 
 
 
@@ -115,6 +118,36 @@ a {
         background-position:10vw;
     }
 }
+.rainbow-button2 {
+    width:calc(5vw + 3px);
+    height:calc(4vw + 3px);
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:1.5vw;
+    font-weight:bold;
+}
+.rainbow-button2:after {
+    content:attr(alt);
+    width:5vw;
+    height:4vw;
+    background-color:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.rainbow-button2:hover {
+    animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position:10vw;
+    }
+}
 
 /*
 La cabecera ocupa todo el ancho de la pagina
@@ -124,6 +157,8 @@ el alto son 200pixeles que es lo que ocupa la imagen de alto
  */
 #main{
     display: none;
+    width: 100%;
+
 }
 #cabecera{
     width: 100%;
@@ -132,19 +167,35 @@ el alto son 200pixeles que es lo que ocupa la imagen de alto
     border-width: 1px 0px;
     border-style: solid;
     display: none;
+    background-image: url("../img/Cabecera.jpg");
 
+}
+#cabecera img{
+    width: 100%;
+    height: 100vh;
 }
 #contenedorExterno1{
     width: 90%;
-    height: 100vh;
+    height: 80vh;
     border-color:black;
     border-width: 1px 0px;
     border-style: solid;
-    padding: 15.625rem 5% ;
+    padding: 10vh 5% ;
 }
+#contenedorExterno1 #ventana1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    top: 99%;
+}
+
 #contenedor1{
     width: 90%;
-    height: 62.5rem;
+    height: 80vh;
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -164,17 +215,29 @@ el alto son 200pixeles que es lo que ocupa la imagen de alto
     border-color:black;
     border-width: 1px 0px;
     border-style: solid;
+    background-image: url("../img/fondoDeNavidad.jpg");
 
+}
+#contenedorExterno2 #ventana2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    top: 90%;
 }
 #contenedor2{
     width: 90%;
-    height: 62.5rem;
-    margin: 15.625rem 5%;
+    height: 60vh;
+    margin: 15vh 5%;
     /*border: 1px solid black;*/
     border-radius: 20px 20px;
     position: absolute;
     display: flex;
     flex-direction: row;
+
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: flex-start;
@@ -188,8 +251,18 @@ el alto son 200pixeles que es lo que ocupa la imagen de alto
     border-color:black;
     border-width: 1px 0px;
     border-style: solid;
+    background-color: #d8342b;
 
+}
+#contenedorExterno3 #ventana3 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
 
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    top: 90%;
 }
 #contenedor3{
     width: 90%;
@@ -207,35 +280,61 @@ el alto son 200pixeles que es lo que ocupa la imagen de alto
 
 }
 #conteinerInterno1{
-    width: 29.8%;
-    height: 31.25rem;
+    width: 44.8%;
+    height: 62.5rem;
     border: 1px solid black;
-    padding: 15.625rem 5% 15.625rem 10%;
+    /*padding: 15.625rem 5% 15.625rem 10%;*/
     float: left;
 
 }
+#conteinerInterno1 img{
+
+    width: 100%;
+    height: 100%;
+}
 #conteinerInterno2{
 
-    width: 29.8%;
-    height: 31.25rem;
+    width: 44.8%;
+    height: 62.5rem;
     border: 1px solid black;
-    padding: 15.625rem 10% 15.625rem 5%;
+    /*padding: 15.625rem 7.5% 15.625rem 7.5%;*/
     float: left;
 
+}
+#conteinerInterno2 img{
+
+    width: 100%;
+    height: 100%;
 }
 /*
 Estilo del footer y sus caja internas
  */
 footer{
+    display: none;
+
     width: 100%;
     height: 31.25rem;
     border-color:black;
     border-width: 1px 0px;
     border-style: solid;
-    display: none;
+
+    position: absolute;
+    background-color: #d8342b;
+}
+#logo{
+    position: relative;
+    width: 16%;
+    height: auto;
+    float: left;
+    left: 5%;
 
 }
+#logo img{
+    width: 100%;
+    height: auto;
+}
 footer div{
+
     width: 9%;
     height: auto;
     padding: 1%;
@@ -247,4 +346,17 @@ footer div{
 footer div img{
     width: 100%;
     height: 100%;
+}
+
+#reproductor{
+    position: relative;
+    left: 13%;
+
+    margin-top: 5%;
+}
+.enlace{
+    position: relative;
+    left: 7%;
+    margin-top: 5%;
+    margin-left: 3%;
 }

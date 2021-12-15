@@ -186,10 +186,11 @@ function iniNevada(num, vel)
 {
 
 
-    var ancho = document.body.offsetWidth-10;
+    var ancho = document.body.clientWidth-16;
 
 
-    var alto = window.innerHeight-10;
+     //window.innerHeight;
+    const alto = window.innerHeight
 
 
     var losCopos = iniCopos(num, ancho, alto)
