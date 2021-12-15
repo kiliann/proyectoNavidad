@@ -167,7 +167,7 @@ el alto son 200pixeles que es lo que ocupa la imagen de alto
     border-width: 1px 0px;
     border-style: solid;
     display: none;
-    background-image: url("../img/Cabecera.jpg");
+   /* background-image: url("../img/Cabecera.jpg");*/
 
 }
 #cabecera img{
@@ -350,8 +350,8 @@ footer div img{
 
 #reproductor{
     position: relative;
-    left: 13%;
-
+    left: 10%;
+    text-align: center;
     margin-top: 5%;
 }
 .enlace{
@@ -359,4 +359,5 @@ footer div img{
     left: 7%;
     margin-top: 5%;
     margin-left: 3%;
+    font-size: 18px;
 }
